@@ -3,8 +3,7 @@
     "",
     "\\BackEnd",
     "\\BackEnd\\BackEnd",
-    "\\BackEnd\\React",
-    "\\BackEnd\\React\\templates"
+    "\\BackEnd\\React"
   ],
   "SelectedNode": "\\BackEnd\\BackEnd\\settings.py",
   "PreviewInSolutionExplorer": false

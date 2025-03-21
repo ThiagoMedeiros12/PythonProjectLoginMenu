@@ -1,7 +1,7 @@
-from asyncio import open_connection
-from tkinter import Button
-from turtle import onclick
+from os import link
+from django.shortcuts import redirect
 from reactpy import component, html, hooks
+
 
  
 def verify(evento):   
@@ -11,13 +11,14 @@ def verify(evento):
 @component
 def Login():
     
-    componente = html.div(
-
+    componente = html.div(        
         html.h2("Digite seu login"),
         html.input(),
         html.h2("Digite sua senha"),
         html.input(),
-        html.button("Login"),
+        html.p(),
+        html.button("login"),
+            
         )
     
     return componente
@@ -41,4 +42,9 @@ def loginSucess():
     return pagina
 
 
+@component
+def button(on_click,display_text):
 
+
+
+    return html.button(display_text)
