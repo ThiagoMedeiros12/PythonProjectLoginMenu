@@ -1,9 +1,7 @@
 from os import link
 from django.shortcuts import redirect
-from reactpy import component, html, hooks
-
-def verify(evento):
-    print(evento)
+from BackEnd.React.views import loginIndex
+from reactpy import component, html
 
 @component
 def Login():
@@ -22,7 +20,7 @@ def Login():
         html.h2("Digite sua senha"),
         html.input(),
         html.p(),
-        html.button("login"),
+        button()
     )
     return componente
 
@@ -62,6 +60,17 @@ def loginSucess():
     )
     return pagina
 
+
+
+
+
+
 @component
 def button(on_click, display_text):
-    return html.button(display_text)
+        return html.button({"on_click":lambda event: signin},"Sign")
+
+
+@component
+def signin(event):
+        return redirect(loginIndex)
+    
