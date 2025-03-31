@@ -1,10 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BackEnd",
-    "\\BackEnd\\BackEnd",
-    "\\BackEnd\\React"
+    "\\jaimeLogin",
+    "\\jaimeLogin\\jaime",
+    "\\jaimeLogin\\Login",
+    "\\jaimeLogin\\Login\\migrations",
+    "\\jaimeLogin\\Login\\templates",
+    "\\jaimeLogin\\Login\\templates\\LoginApp"
   ],
-  "SelectedNode": "\\BackEnd\\React\\components.py",
+  "SelectedNode": "\\jaimeLogin\\Login\\views.py",
   "PreviewInSolutionExplorer": false
 }

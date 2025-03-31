@@ -1,2 +1,1 @@
-django
-reactpy[django]
+django==5.1.7
