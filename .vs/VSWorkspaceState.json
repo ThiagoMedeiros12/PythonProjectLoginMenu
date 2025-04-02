@@ -1,13 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\jaimeLogin",
     "\\jaimeLogin\\jaime",
     "\\jaimeLogin\\Login",
-    "\\jaimeLogin\\Login\\migrations",
-    "\\jaimeLogin\\Login\\templates",
-    "\\jaimeLogin\\Login\\templates\\LoginApp"
+    "\\jaimeLogin\\Login\\templates"
   ],
-  "SelectedNode": "\\jaimeLogin\\Login\\views.py",
+  "SelectedNode": "\\jaimeLogin",
   "PreviewInSolutionExplorer": false
 }
