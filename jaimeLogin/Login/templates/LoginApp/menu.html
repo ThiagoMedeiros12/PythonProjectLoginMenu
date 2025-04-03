@@ -1,25 +1,25 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="utf-8" />
-        <title>Login Menu</title>
-    </head>
-    <body>
-        <h1>Faca login para entrar</h1>
-        <form>
-            <p>
-                Digite o seu usuario: <input type="text" name="usuario" />
-            </p>
-            <p>
-                Digite a sua senha: <input type="password" name="senha" />
-             </p>
-            <p>
-                <input type = "button" value = "login"/>
-            </p>
+
+{% extends "templateInicial.html" %}
 
 
-        </form>
-         
 
-     </body> 
-</html>
+{% block 'head' %}
+<title>Login Menu</title>
+{% endblock 'head' %}
+{% block 'body' %}
+<h1>Faca login para entrar</h1>
+<form>
+    <p>
+        Digite o seu usuario: <input type="text" name="usuario" value="exemplo" />
+    </p>
+    <p>
+        Digite a sua senha: <input type="password" name="senha" value="senha" />
+    </p>
+    <p>
+        <input 
+               type="button" value="LOGIN" onclick="checkAutenticacao"
+        />
+    </p>
+</form>
+{% endblock 'body' %}
+
