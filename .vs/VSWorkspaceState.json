@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\jaimeLogin\\jaime",
-    "\\jaimeLogin\\Login",
-    "\\jaimeLogin\\Login\\templates"
+    "\\jaimeLogin\\jaime\\authenticator"
   ],
-  "SelectedNode": "\\jaimeLogin",
   "PreviewInSolutionExplorer": false
 }
