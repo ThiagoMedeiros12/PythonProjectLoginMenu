@@ -20,7 +20,7 @@ def login(request):
     serializer = UserSerializer(instance=user)
 
     # Ensure profile exists
-    profile, created = Profile.objects.get_or_create(user=user)
+    profile = Profile.objects.get_or_create(user=user)
     profile.lastseen = datetime.now()
     profile.save()
 

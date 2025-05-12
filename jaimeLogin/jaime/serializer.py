@@ -3,14 +3,9 @@ from django.contrib.auth.models import User
 from .models import Profile
 
 
-class ProfileSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Profile
-        fields = ['lastseen']
-
 
 class UserSerializer(serializers.ModelSerializer):
-    profile = ProfileSerializer(read_only=True)
+    
 
     class Meta:
         model = User
@@ -18,8 +13,7 @@ class UserSerializer(serializers.ModelSerializer):
         extra_kwargs = {'password': {'write_only': True}}
 
     def create(self, validated_data):
-        user = User(username=validated_data['username'], email=validated_data['email'])
-        
+        user = User(username=validated_data['username'], email=validated_data['email'])        
         user.set_password(validated_data['password'])
         user.save()
         return user
